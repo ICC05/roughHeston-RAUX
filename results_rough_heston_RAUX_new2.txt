@@ -1,0 +1,50 @@
+======================================================================
+  RoughHeston  +  RAUX
+======================================================================
+
+--- Structural Parameter Estimates ---
+
+  Parameter            Estimate
+  ---------            --------
+  lambda               0.027084
+  theta                0.492792
+  nu                  13.538094
+  rho                 -0.360629
+  H                    0.020000
+
+  Objective (chi2)    = 483.869909
+  Objective OOS chi2  = 483.494251  (ratio 0.999)
+  Cross-restart H spread = 0.3516
+
+--- Auxiliary Parameters: Empirical vs Simulated at Optimum ---
+
+  Parameter     Empirical    Simulated         Diff     SE(diff)    t_stat   chi2_i
+  ---------     ---------    ---------         ----     --------    ------   ------
+  mean_logRV     4.649767     4.571249    -0.078518     0.001661    -47.26     2.48
+  har_beta_d     0.339695     0.495522     0.155826     0.000759    205.41  -141.16
+  har_beta_w     0.388552     0.317703    -0.070849     0.001064    -66.57    83.81
+  har_beta_m     0.217929    -0.008367    -0.226296     0.000869   -260.31   361.84
+  har_var_eps     0.274801     0.280262     0.005460     0.000331     16.51    -9.23
+  vg_slope       0.118973     0.187326     0.068353     0.000416    164.22    62.52
+  vg_level      -0.744932    -0.741424     0.003508     0.000823      4.26     2.93
+  lev_corr1     -0.125404    -0.274449    -0.149045     0.000583   -255.84   152.66
+  semivar_lev     0.115856     0.141679     0.025823     0.000627     41.17   -31.70
+  ret_skew      -0.185389    -0.817710    -0.632321     0.003463   -182.58    -7.72
+  ret_kurt       4.572492     2.013193    -2.559299     0.018146   -141.04     7.44
+
+  Sum chi2_i = 483.8699   (total chi^2 = 483.8699)
+  |t| > 2 on: mean_logRV, har_beta_d, har_beta_w, har_beta_m, har_var_eps, vg_slope, vg_level, lev_corr1, semivar_lev, ret_skew, ret_kurt -> these moments are misfitted beyond MC noise.
+
+--- Derived Quantities ---
+
+  Hurst exponent H              : 0.0200
+  Volterra exponent alpha       : 0.5200
+  Mean-reversion lambda (1/day) : 0.0271
+  Effective half-life (days)    : 25.59
+  Long-run variance theta       : 0.492792  (annualized = 124.1836)
+  Long-run volatility (ann.)    : 11.1438
+  Vol-of-vol nu                 : 13.5381
+  Feller-type ratio 2 theta/nu^2: 0.0054
+  Leverage rho                  : -0.3606
+
+======================================================================
